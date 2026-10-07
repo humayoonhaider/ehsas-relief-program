@@ -144,7 +144,7 @@ export const Footer: React.FC = () => {
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#cbd5e1' }}>
                 <Mail size={15} color="#38bdf8" />
-                <span>support@citizengrantportal.org</span>
+                <span>support@ehsasreliefprogram.vercel.app</span>
               </div>
             </div>
             <ShareButton placement="general" variant="compact" showHelperText={false} />

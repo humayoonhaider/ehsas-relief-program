@@ -54,9 +54,9 @@ export const DEFAULT_PROGRAM_SETTINGS: ProgramSettings = {
   grantAmountText: 'Rs. 10,000 / PKR 10,000',
   description: 'حکومتِ پاکستان پبلک ویلفیئر اور احساس پروگرام کے تحت مستحق شہریوں کو 10,000 روپے نقد امداد اور 50GB مفت 4G ڈیٹا کی براہ راست فراہمی۔ رقم ایزی پیسہ، جاز کیش یا بینک اکاؤنٹ میں براہ راست منتقل کی جاتی ہے۔',
   logoText: 'احساس ریلیف (Ehsaas Relief)',
-  contactEmail: 'support@citizengrantportal.org',
+  contactEmail: 'support@ehsasreliefprogram.vercel.app',
   contactPhone: '0800-24624',
-  website: 'https://citizengrantportal.org',
+  website: 'https://ehsasreliefprogram.vercel.app',
   instructions: 'Please provide accurate CNIC, contact, and account details. If approved, Rs. 10,000 grant funds will be transferred directly to your Easypaisa/JazzCash/Bank account and an SMS confirmation will be sent. 100% free of charge.',
   privacyNotice: 'Your CNIC and account details are encrypted and processed strictly for applicant identification and direct financial disbursement.',
   termsText: 'By submitting this application, you declare that your provided account details are active and accurate. Funds are dispatched directly upon case approval.',
@@ -70,7 +70,7 @@ export const DEFAULT_PROGRAM_SETTINGS: ProgramSettings = {
 
 export const DEFAULT_WHATSAPP_SETTINGS: WhatsAppSettings = {
   enabled: true,
-  campaignUrl: 'https://citizengrantportal.org/apply',
+  campaignUrl: 'https://ehsasreliefprogram.vercel.app/apply',
   grantAmountText: 'Rs. 10,000',
   shareMessageTemplate: 'السلام علیکم! 📢 احساس قومی ریلیف پورٹل کی طرف سے تمام مستحق شہریوں اور طلبہ کے لیے {GRANT_AMOUNT} نقد امداد اور 50GB مفت ڈیٹا پیکیج کا اعلان کیا گیا ہے۔ اپنا شناختی کارڈ اور ایزی پیسہ/جاز کیش اکاؤنٹ درج کر کے ابھی حاصل کریں: {URL}',
   groupShareMessageTemplate: '📢 ضروری اطلاع: احساس پبلک ریلیف پروگرام کے تحت {GRANT_AMOUNT} کیش گرانٹ اور 50GB ڈیٹا کی رجسٹریشن جاری ہے۔ محدود کوٹہ ہے، ابھی آن لائن اپلائی کریں: {URL}',
@@ -186,7 +186,7 @@ export const INITIAL_DEMO_APPLICATIONS: Application[] = [
       {
         status: 'UNDER_REVIEW',
         timestamp: new Date(Date.now() - 4 * 86400000).toISOString(),
-        changedBy: 'Review Officer (admin@citizengrantportal.org)',
+        changedBy: 'Review Officer (admin@ehsasreliefprogram.vercel.app)',
         note: 'Income certificate and rental agreement verified.',
       },
       {
@@ -256,7 +256,7 @@ export const INITIAL_DEMO_APPLICATIONS: Application[] = [
       {
         status: 'UNDER_REVIEW',
         timestamp: new Date(Date.now() - 2 * 86400000).toISOString(),
-        changedBy: 'Review Officer (admin@citizengrantportal.org)',
+        changedBy: 'Review Officer (admin@ehsasreliefprogram.vercel.app)',
         note: 'Assigned to technical assessment officer.',
       },
     ],
@@ -449,14 +449,14 @@ export const INITIAL_ADMINS: AdminUser[] = [
   {
     id: 'admin-1',
     name: 'Sarah Jenkins',
-    email: 'admin@citizengrantportal.org',
+    email: 'admin@ehsasreliefprogram.vercel.app',
     role: 'Super Admin',
     lastLogin: new Date().toISOString(),
   },
   {
     id: 'admin-2',
     name: 'Tariq Mahmood',
-    email: 'reviewer@citizengrantportal.org',
+    email: 'reviewer@ehsasreliefprogram.vercel.app',
     role: 'Case Reviewer',
     lastLogin: new Date(Date.now() - 86400000).toISOString(),
   },
@@ -468,7 +468,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
     action: 'LOGIN',
     timestamp: new Date(Date.now() - 2 * 3600000).toISOString(),
     details: 'Admin logged into portal from local session.',
-    adminEmail: 'admin@citizengrantportal.org',
+    adminEmail: 'admin@ehsasreliefprogram.vercel.app',
     adminName: 'Sarah Jenkins',
   },
   {
@@ -477,7 +477,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
     timestamp: new Date(Date.now() - 1 * 86400000).toISOString(),
     target: 'APP-2026-000101',
     details: 'Status changed from UNDER_REVIEW to APPROVED.',
-    adminEmail: 'admin@citizengrantportal.org',
+    adminEmail: 'admin@ehsasreliefprogram.vercel.app',
     adminName: 'Sarah Jenkins',
   },
   {
@@ -486,7 +486,7 @@ export const INITIAL_AUDIT_LOGS: AuditLog[] = [
     timestamp: new Date(Date.now() - 1 * 86400000).toISOString(),
     target: 'APP-2026-000103',
     details: 'Internal case note added requesting residency scan.',
-    adminEmail: 'reviewer@citizengrantportal.org',
+    adminEmail: 'reviewer@ehsasreliefprogram.vercel.app',
     adminName: 'Tariq Mahmood',
   },
 ];

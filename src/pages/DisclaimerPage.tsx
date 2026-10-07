@@ -94,7 +94,7 @@ export const DisclaimerPage: React.FC = () => {
               {isUrdu ? 'رسمی شکایت و ہیلپ لائن رابطہ:' : 'Official Verification Inquiries:'}
             </div>
             <div style={{ fontSize: '0.825rem', color: '#14532d' }}>
-              Toll-Free Helpline: <strong>0800-24624</strong> | Official Email: <strong>support@citizengrantportal.org</strong>
+              Toll-Free Helpline: <strong>0800-24624</strong> | Official Email: <strong>support@ehsasreliefprogram.vercel.app</strong>
             </div>
           </div>
         </div>

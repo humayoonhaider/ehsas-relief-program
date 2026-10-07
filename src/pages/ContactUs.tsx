@@ -118,7 +118,7 @@ export const ContactUs: React.FC = () => {
               {isUrdu ? 'آفیشل ای میل' : 'Official Support Email'}
             </h3>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#0284c7', marginBottom: '0.25rem' }}>
-              support@citizengrantportal.org
+              support@ehsasreliefprogram.vercel.app
             </div>
             <p style={{ fontSize: '0.78rem', color: 'var(--navy-500)', margin: 0 }}>
               {isUrdu ? 'جوابی وقت: 24 تا 48 گھنٹوں کے اندر' : 'Expected response within 24–48 business hours'}

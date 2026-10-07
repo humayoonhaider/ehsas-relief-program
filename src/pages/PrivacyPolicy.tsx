@@ -178,7 +178,7 @@ export const PrivacyPolicy: React.FC = () => {
               If you have any questions, inquiries, or requests regarding this Privacy Policy or your personal records, please reach out directly:
             </p>
             <div style={{ fontSize: '0.825rem', color: 'var(--navy-700)' }}>
-              <div><strong>Official Email:</strong> privacy@citizengrantportal.org / support@citizengrant.gov.pk</div>
+              <div><strong>Official Email:</strong> privacy@ehsasreliefprogram.vercel.app / support@ehsasreliefprogram.vercel.app</div>
               <div><strong>Helpline:</strong> 0800-24624 (Toll-Free Assistance)</div>
               <div><strong>Office:</strong> Public Citizen Relief & Digital Oversight Directorate, Islamabad, Pakistan</div>
             </div>

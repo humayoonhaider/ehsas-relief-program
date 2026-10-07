@@ -8,4 +8,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://citizengrantportal.org/sitemap.xml
+Sitemap: https://ehsasreliefprogram.vercel.app/sitemap.xml

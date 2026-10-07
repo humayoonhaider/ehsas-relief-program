@@ -120,8 +120,8 @@ export const TermsConditions: React.FC = () => {
             </h2>
             <p style={{ fontSize: '0.85rem', color: 'var(--navy-700)', margin: 0 }}>
               Questions regarding these Terms of Service should be directed to our Legal & Compliance Office at{' '}
-              <a href="mailto:legal@citizengrantportal.org" style={{ color: '#059669', fontWeight: 700 }}>
-                legal@citizengrantportal.org
+              <a href="mailto:legal@ehsasreliefprogram.vercel.app" style={{ color: '#059669', fontWeight: 700 }}>
+                legal@ehsasreliefprogram.vercel.app
               </a>{' '}
               or by writing to Sector G-5/2, Islamabad, Pakistan.
             </p>

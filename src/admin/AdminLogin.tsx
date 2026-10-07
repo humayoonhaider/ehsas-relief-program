@@ -99,7 +99,7 @@ export const AdminLogin: React.FC = () => {
             <Input
               type="email"
               label="Admin Email Address"
-              placeholder="admin@citizengrantportal.org"
+              placeholder="admin@ehsasreliefprogram.vercel.app"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
