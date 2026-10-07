@@ -1,0 +1,6 @@
+{
+  "name": "CitizenConnect Application & Outreach Portal",
+  "description": "Production-quality citizen and community program application portal with integrated WhatsApp outreach, dynamic form builder, case tracking, and comprehensive admin analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
