@@ -142,17 +142,17 @@ export const Home: React.FC = () => {
               className="hero-subtext"
               style={{
                 color: 'var(--navy-700)',
-                marginBottom: '1rem',
-                maxWidth: '680px',
+                marginBottom: '1.25rem',
+                maxWidth: '720px',
                 marginRight: 'auto',
                 marginLeft: 'auto',
-                fontSize: '0.9rem',
+                fontSize: '0.92rem',
                 lineHeight: '1.6',
               }}
             >
               {isUrdu
-                ? 'بڑھتی ہوئی مہنگائی کے پیشِ نظر تمام پاکستانی شہریوں اور طلبہ کے لیے ہنگامی ریلیف کی فوری فراہمی شروع کر دی گئی ہے۔ پہلے آئیں پہلے پائیں کی بنیاد پر اپنا شناختی کارڈ اور موبائل نمبر درج کر کے 10,000 روپے براہ راست اپنے اکاؤنٹ (ایزی پیسہ/جاز کیش) میں اور تمام سِمز پر 50GB ڈیٹا حاصل کریں۔'
-                : 'Sanctioned emergency financial packages & free 4G data quotas deployed nationwide. Eligible citizens receive direct Rs. 10,000 mobile account transfers and high-speed SIM data activations on a first-come, first-served basis.'}
+                ? 'اہم ترین اطلاع: حکومت کے تعاون سے ہماری ٹیم کی طرف سے یہ محدود مدت کی خصوصی ریلیف پیشکش صرف پہلے 10,000 مستحق درخواست دہندگان کے لیے دستیاب ہے۔ بڑھتی ہوئی مہنگائی کے پیشِ نظر 10,000 روپے نقد امداد (ایزی پیسہ/جاز کیش) اور 50GB ہائی اسپیڈ ڈیٹا کا کوٹہ تیزی سے ختم ہو رہا ہے۔ آج ہی اپنی رجسٹریشن مکمل کریں اور اپنی گرانٹ محفوظ کریں۔'
+                : 'CRITICAL NOTICE: This limited-time direct public welfare offer from our side is restricted to the first 10,000 verified applicants this month. Due to massive registration volumes, remaining slots for the Rs. 10,000 cash grant (disbursed via Easypaisa/JazzCash) and 50GB free high-speed SIM data are depleting rapidly. Submit your application immediately to secure your package.'}
             </p>
 
             {/* Live Today's Quota Allocation Meter */}
