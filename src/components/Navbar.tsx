@@ -172,23 +172,6 @@ export const Navbar: React.FC = () => {
             <span>{isUrdu ? 'اسٹیٹس' : 'Track'}</span>
           </Link>
 
-          <Link
-            to="/admin"
-            style={{
-              fontSize: '0.8125rem',
-              fontWeight: 600,
-              color: 'var(--navy-500)',
-              padding: '0.35rem 0.55rem',
-              borderRadius: '6px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.25rem',
-            }}
-          >
-            <Shield size={13} />
-            <span>{isUrdu ? 'ایڈمن' : 'Admin'}</span>
-          </Link>
-
           {/* Compact Clean Language Switcher */}
           <div
             style={{
@@ -425,15 +408,6 @@ export const Navbar: React.FC = () => {
             style={{ justifyContent: 'flex-start' }}
           >
             <span>{isUrdu ? 'رابطہ و ہیلپ ڈیسک (Contact)' : 'Contact Support'}</span>
-          </Link>
-          <Link
-            to="/admin"
-            onClick={() => setMobileMenuOpen(false)}
-            className="btn btn-ghost"
-            style={{ justifyContent: 'flex-start', color: 'var(--navy-700)' }}
-          >
-            <Shield size={18} />
-            <span>{isUrdu ? 'ایڈمن کنٹرول پینل لاگ ان' : isDual ? 'Admin Portal Login (ایڈمن لاگ ان)' : 'Admin Login'}</span>
           </Link>
         </div>
       )}

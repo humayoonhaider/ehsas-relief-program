@@ -90,11 +90,6 @@ export const Footer: React.FC = () => {
                   {isUrdu ? 'درخواست کا اسٹیٹس چیک کریں' : 'Track Application Status'}
                 </Link>
               </li>
-              <li>
-                <Link to="/admin" style={{ color: '#94a3b8' }}>
-                  {isUrdu ? 'ایڈمن کنٹرول پینل' : 'Administrator Access'}
-                </Link>
-              </li>
             </ul>
           </div>
 
