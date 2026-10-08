@@ -57,7 +57,7 @@ export const Home: React.FC = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundImage: "url('/src/assets/images/ehsaas_trust_banner_1791442993144.jpg')",
+            backgroundImage: "url('/images/ehsaas_trust_banner_1791442993144.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.06,
@@ -466,7 +466,7 @@ export const Home: React.FC = () => {
             </div>
             <div style={{ flex: '0 0 160px', maxWidth: '100%', borderRadius: '8px', overflow: 'hidden', border: '1px solid #d1fae5', margin: '0 auto' }}>
               <img
-                src="/src/assets/images/secure_payment_badge_1791443010358.jpg"
+                src="/images/secure_payment_badge_1791443010358.jpg"
                 alt="Secure payment partners"
                 referrerPolicy="no-referrer"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
