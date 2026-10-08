@@ -10,8 +10,8 @@ export const AdminLogin: React.FC = () => {
   const location = useLocation();
   const from = (location.state as any)?.from?.pathname || '/admin/dashboard';
 
-  const [email, setEmail] = useState('admin@citizengrantportal.org');
-  const [password, setPassword] = useState('demo-password-123');
+  const [email, setEmail] = useState('humayoonkhan003@gmail.com');
+  const [password, setPassword] = useState('adminehsasprogram');
   const [rememberMe, setRememberMe] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
