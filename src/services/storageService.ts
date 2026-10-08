@@ -99,9 +99,11 @@ export const storageService = {
 
   // --- Program Settings ---
   getSettings(): ProgramSettings {
-    const settings = getStoredItem<ProgramSettings>(STORAGE_KEYS.SETTINGS, DEFAULT_PROGRAM_SETTINGS);
+    let settings = getStoredItem<ProgramSettings>(STORAGE_KEYS.SETTINGS, DEFAULT_PROGRAM_SETTINGS);
+    let needsSave = false;
+
     if (!settings || settings.logoText === 'CitizenConnect' || settings.orgName?.includes('Citizen Welfare') || !settings.logoText) {
-      const upgraded: ProgramSettings = {
+      settings = {
         ...DEFAULT_PROGRAM_SETTINGS,
         ...settings,
         orgName: 'احساس پبلک ویلفیئر و قومی امداد پورٹل (Ehsaas Relief)',
@@ -110,8 +112,16 @@ export const storageService = {
         footerText: 'احساس قومی ریلیف پورٹل 2026 • Ehsaas Qaumi Relief Program',
         contactPhone: '0800-24624',
       };
-      setStoredItem(STORAGE_KEYS.SETTINGS, upgraded);
-      return upgraded;
+      needsSave = true;
+    }
+
+    if (settings && settings.adsenseClientId === 'ca-pub-0000000000000000') {
+      settings.adsenseClientId = 'ca-pub-3469572139071472';
+      needsSave = true;
+    }
+
+    if (needsSave) {
+      setStoredItem(STORAGE_KEYS.SETTINGS, settings);
     }
     return settings;
   },

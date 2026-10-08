@@ -63,7 +63,7 @@ export const DEFAULT_PROGRAM_SETTINGS: ProgramSettings = {
   footerText: 'احساس قومی ریلیف پورٹل 2026 • Ehsaas Qaumi Relief Program',
   primaryCtaText: 'ابھی 10,000 روپے کے لیے اپلائی کریں',
   adsenseEnabled: true,
-  adsenseClientId: 'ca-pub-0000000000000000',
+  adsenseClientId: 'ca-pub-3469572139071472',
   adsenseHeaderSlotId: '1234567890',
   adsenseInArticleSlotId: '0987654321',
 };

@@ -1,6 +1,6 @@
 {
-  "name": "CitizenConnect Application & Outreach Portal",
-  "description": "Production-quality citizen and community program application portal with integrated WhatsApp outreach, dynamic form builder, case tracking, and comprehensive admin analytics.",
+  "name": "Ehsaas Qaumi Relief & Outreach Portal",
+  "description": "حکومتِ پاکستان احساس پبلک ویلفیئر اسکیم کے تحت نقد ریلیف اور مفت موبائل انٹرنیٹ ڈیٹا کی رجسٹریشن کے لیے آفیشل پورٹل۔ Ehsaas Qaumi Relief and digital citizen outreach portal.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

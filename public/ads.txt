@@ -1,3 +1,18 @@
+# ==============================================================================
 # Google AdSense Authorized Digital Sellers (ads.txt)
-# Replace pub-0000000000000000 with your actual Google AdSense Publisher ID
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# Ehsaas Qaumi Relief Portal - Official AdSense Monetization Verification File
+# ==============================================================================
+# 
+# INSTRUCTIONS (ENGLISH):
+# 1. Replace "pub-0000000000000000" with your actual Google AdSense Publisher ID.
+# 2. You can find your Publisher ID in your AdSense account under Account > Settings > Account Information.
+# 3. Ensure the relationship remains "DIRECT" unless you are using a sub-seller network.
+#
+# ہدایات (URDU):
+#۔ اپنے اصلی گوگل ایڈسینس پبلشر آئی ڈی کے ساتھ "pub-0000000000000000" کو تبدیل کریں۔
+#۔ آپ ایڈسینس اکاؤنٹ میں جا کر اکاؤنٹ کی معلومات (Account Information) سے اپنی پبلشر آئی ڈی حاصل کر سکتے ہیں۔
+#
+# Format: Field 1, Field 2, Field 3, Field 4
+# Domain, Publisher ID, Relationship, Certification Authority ID
+google.com, pub-3469572139071472, DIRECT, f08c47fec0942fa0
+
