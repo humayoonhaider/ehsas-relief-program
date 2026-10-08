@@ -448,17 +448,10 @@ export const INITIAL_DEMO_APPLICATIONS: Application[] = [
 export const INITIAL_ADMINS: AdminUser[] = [
   {
     id: 'admin-1',
-    name: 'Sarah Jenkins',
-    email: 'admin@ehsasreliefprogram.vercel.app',
+    name: 'Humayoon Khan',
+    email: 'humayoonkhan003@gmail.com',
     role: 'Super Admin',
     lastLogin: new Date().toISOString(),
-  },
-  {
-    id: 'admin-2',
-    name: 'Tariq Mahmood',
-    email: 'reviewer@ehsasreliefprogram.vercel.app',
-    role: 'Case Reviewer',
-    lastLogin: new Date(Date.now() - 86400000).toISOString(),
   },
 ];
 

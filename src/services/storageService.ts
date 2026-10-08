@@ -181,8 +181,8 @@ export const storageService = {
     action: AuditLog['action'],
     target: string | undefined,
     details: string,
-    adminEmail = 'admin@citizengrantportal.org',
-    adminName = 'Super Admin'
+    adminEmail = 'humayoonkhan003@gmail.com',
+    adminName = 'Humayoon Khan'
   ): void {
     const logs = this.getAuditLogs();
     const newLog: AuditLog = {

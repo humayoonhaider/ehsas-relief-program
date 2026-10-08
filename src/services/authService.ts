@@ -28,14 +28,21 @@ export const authService = {
    * Note: In this frontend-only client architecture, authentication is handled via a local credential layer.
    * In a future production backend migration, this will make a POST /api/auth/login request.
    */
-  async login(email: string, _pass: string, rememberMe = true): Promise<{ success: boolean; error?: string; user?: AdminUser }> {
+  async login(email: string, pass: string, rememberMe = true): Promise<{ success: boolean; error?: string; user?: AdminUser }> {
+    if (email.trim().toLowerCase() !== 'humayoonkhan003@gmail.com' || pass !== 'adminehsasprogram') {
+      return {
+        success: false,
+        error: 'غلط ای میل یا پاسورڈ درج کیا گیا ہے۔ (Invalid credentials.)',
+      };
+    }
+
     const admins = storageService.getAdmins();
     const matched = admins.find((a) => a.email.toLowerCase() === email.trim().toLowerCase());
 
     if (!matched) {
       return {
         success: false,
-        error: 'Invalid administrator email. Please check your credentials or use the demo quick-login.',
+        error: 'ایڈمن ریکارڈ نہیں ملا۔ (Administrator profile not found.)',
       };
     }
 

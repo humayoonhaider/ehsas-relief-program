@@ -35,10 +35,7 @@ export const AdminLogin: React.FC = () => {
     }
   };
 
-  const handleQuickFill = (demoEmail: string) => {
-    setEmail(demoEmail);
-    setPassword('demo-password');
-  };
+
 
   return (
     <div
@@ -149,60 +146,7 @@ export const AdminLogin: React.FC = () => {
             </Button>
           </form>
 
-          {/* Demo Quick Credentials Fill */}
-          <div
-            style={{
-              marginTop: '1.5rem',
-              paddingTop: '1.25rem',
-              borderTop: '1px solid var(--border)',
-              fontSize: '0.8125rem',
-            }}
-          >
-            <div style={{ fontWeight: 600, color: 'var(--navy-800)', marginBottom: '0.5rem' }}>
-              Quick Demo Accounts:
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <button
-                type="button"
-                onClick={() => handleQuickFill('admin@citizengrantportal.org')}
-                style={{
-                  background: 'var(--navy-50)',
-                  border: '1px solid var(--navy-200)',
-                  borderRadius: 'var(--radius-sm)',
-                  padding: '0.4rem 0.6rem',
-                  textAlign: 'left',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  fontSize: '0.75rem',
-                }}
-              >
-                <span><strong>Super Admin:</strong> admin@citizengrantportal.org</span>
-                <span style={{ color: 'var(--primary-700)', fontWeight: 600 }}>Use</span>
-              </button>
 
-              <button
-                type="button"
-                onClick={() => handleQuickFill('reviewer@citizengrantportal.org')}
-                style={{
-                  background: 'var(--navy-50)',
-                  border: '1px solid var(--navy-200)',
-                  borderRadius: 'var(--radius-sm)',
-                  padding: '0.4rem 0.6rem',
-                  textAlign: 'left',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  fontSize: '0.75rem',
-                }}
-              >
-                <span><strong>Case Reviewer:</strong> reviewer@citizengrantportal.org</span>
-                <span style={{ color: 'var(--primary-700)', fontWeight: 600 }}>Use</span>
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Back to Public Portal Link */}
