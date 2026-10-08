@@ -41,13 +41,31 @@ export const Home: React.FC = () => {
       {/* Hero Section */}
       <section
         style={{
+          position: 'relative',
           background: 'linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 40%, #ffffff 100%)',
-          paddingTop: '1.5rem',
-          paddingBottom: '2rem',
+          paddingTop: '2rem',
+          paddingBottom: '2.5rem',
           borderBottom: '1px solid var(--border)',
+          overflow: 'hidden',
         }}
       >
-        <div className="container">
+        {/* Subtle high-trust background watermark layer */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: "url('/src/assets/images/ehsaas_trust_banner_1791442993144.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.06,
+            pointerEvents: 'none',
+            zIndex: 0,
+          }}
+        />
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '780px', margin: '0 auto', textAlign: 'center' }}>
             {/* Top Urgent Limited-Offer Badge */}
             <div
@@ -399,6 +417,60 @@ export const Home: React.FC = () => {
               <Link to="/application-status" className="btn btn-secondary btn-sm" style={{ width: '100%', justifyContent: 'center' }}>
                 {isUrdu ? 'اسٹیٹس تلاش کریں' : isDual ? 'Track Case (اسٹیٹس چیک کریں)' : 'Track Case'}
               </Link>
+            </div>
+          </div>
+
+          {/* Secure Disbursement Partners Trust Badge */}
+          <div
+            style={{
+              backgroundColor: '#f0fdf4',
+              border: '1px solid #bbf7d0',
+              borderRadius: '12px',
+              padding: '1.25rem',
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '1.5rem',
+              flexWrap: 'wrap',
+              marginBottom: '1.5rem',
+              boxShadow: 'var(--shadow-sm)',
+            }}
+          >
+            <div style={{ flex: '1 1 300px', textAlign: isUrdu ? 'right' : 'left' }}>
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.25rem',
+                  backgroundColor: '#dcfce7',
+                  color: '#15803d',
+                  padding: '0.15rem 0.5rem',
+                  borderRadius: 'var(--radius-full)',
+                  fontSize: '0.7rem',
+                  fontWeight: 700,
+                  marginBottom: '0.5rem',
+                }}
+              >
+                <ShieldCheck size={12} />
+                {isUrdu ? 'محفوظ ڈیجیٹل سسٹم' : 'Verified Secure Channels'}
+              </span>
+              <h4 style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--navy-900)', marginBottom: '0.35rem' }}>
+                {isUrdu ? 'ایزی پیسہ، جاز کیش اور بینک اکاؤنٹ میں براہ راست منتقلی' : 'Direct Transfers to Easypaisa, JazzCash & Banks'}
+              </h4>
+              <p style={{ fontSize: '0.8rem', color: 'var(--navy-700)', lineHeight: '1.5', margin: 0 }}>
+                {isUrdu
+                  ? 'تمام گرانٹس کی تقسیم براہ راست سرکاری تصدیق شدہ بائیومیٹرک اور ایس ایس ایل انکرپٹڈ طریقوں سے کی جاتی ہے۔ کسی پوشیدہ چارجز یا کٹوتی کے بغیر فنڈز آپ تک پہنچتے ہیں۔'
+                  : 'All relief funds are disbursed securely using certified direct bank transfers and biometric wallet validation channels. 100% free and encrypted.'}
+              </p>
+            </div>
+            <div style={{ flex: '0 0 160px', maxWidth: '100%', borderRadius: '8px', overflow: 'hidden', border: '1px solid #d1fae5', margin: '0 auto' }}>
+              <img
+                src="/src/assets/images/secure_payment_badge_1791443010358.jpg"
+                alt="Secure payment partners"
+                referrerPolicy="no-referrer"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
             </div>
           </div>
 

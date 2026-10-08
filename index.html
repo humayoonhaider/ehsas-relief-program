@@ -21,6 +21,11 @@
     <!-- Google AdSense Automated Script Loader -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3469572139071472" crossorigin="anonymous"></script>
 
+    <!-- Google AdSense AMP Auto Ads Script -->
+    <script async custom-element="amp-auto-ads"
+            src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+
     <!-- Schema.org JSON-LD for Search Engines & AdSense Verification -->
     <script type="application/ld+json">
     {
@@ -55,6 +60,9 @@
     </script>
   </head>
   <body>
+    <amp-auto-ads type="adsense"
+                  data-ad-client="ca-pub-3469572139071472">
+    </amp-auto-ads>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
