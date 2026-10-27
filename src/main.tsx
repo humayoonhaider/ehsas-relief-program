@@ -6,7 +6,7 @@ createRoot(document.getElementById('root')!).render(<App />);
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/assets/aistudio/sw_c3198e4a.js');
+    navigator.serviceWorker.register('/sw_c3198e4a.js');
   });
 }
 
