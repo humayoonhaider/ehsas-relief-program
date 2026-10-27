@@ -4,9 +4,12 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(<App />);
 
+/*
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw_c3198e4a.js');
   });
 }
+*/
+
 
